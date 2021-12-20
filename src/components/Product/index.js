@@ -10,11 +10,14 @@ import {
     TouchableWithoutFeedback,
     Easing
 } from "react-native";
-import {getDisplayPrice} from "../../library/ProductsHelper"
+import DisplayPrices from "../../components/Product/DisplayPrices"
+import { useNavigation } from '@react-navigation/native';
 
 const width = Dimensions.get('window').width * 0.8;
 
 const Product = ({product}) => {
+    const navigation = useNavigation();
+
     const animatedValue = new Animated.Value(0)
 
     const onHold = () => {
@@ -31,20 +34,15 @@ const Product = ({product}) => {
             duration: 100,
             easing: Easing.ease
         }).start()
-
-        // Navigate to Details Screen
     }
 
-    const DisplayPrices = () => {
-        const {price, discountedPrice} = getDisplayPrice(product)
-
-        return discountedPrice ? 
-            <View style={{flexDirection: 'row'}}>
-                <Text style={styles.boldLabel}>{discountedPrice}</Text>
-                <Text style={styles.oldPriceLabel}>{price}</Text>
-            </View> :
-            <Text style={styles.boldLabel}>{price}</Text>
+    const navigateToDetails = () => {
+        navigation.navigate("Details", {
+            product
+        })
     }
+
+    
 
     const transform = {transform: [
         {
@@ -65,6 +63,7 @@ const Product = ({product}) => {
         <TouchableWithoutFeedback 
             onPressIn={onHold} 
             onPressOut={onRelease}
+            onPress={navigateToDetails}
         >
             <Animated.View style={[styles.container, transform]}>
                 <ImageBackground
@@ -85,7 +84,7 @@ const Product = ({product}) => {
                             >
                                     {product.name}
                             </Text>
-                            <DisplayPrices />
+                            <DisplayPrices product={product} />
                             <Text 
                                 style={styles.productDescriptionLabel} 
                                 numberOfLines={2} 
@@ -113,7 +112,8 @@ const styles = StyleSheet.create({
     container: {
         width: width, 
         aspectRatio: 4/3,
-        marginHorizontal: 10
+        paddingHorizontal: 15,
+        marginVertical: 10
     },
     backgroundImage: {
         flex: 1,
@@ -143,14 +143,6 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         color: 'white',
         fontSize: 16
-    },
-    oldPriceLabel: {
-        fontSize: 14,
-        marginTop: 6,
-        marginLeft: 5,
-        textDecorationLine: 'line-through', 
-        textDecorationStyle: 'solid',
-        color: 'lightgray',
     },
     productDescriptionLabel: {
         marginTop: 5,

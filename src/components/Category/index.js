@@ -23,8 +23,7 @@ const Category = ({category}) => {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
-        marginVertical: 10
+        flex: 1
     },
     title: {
         fontSize: 20,
