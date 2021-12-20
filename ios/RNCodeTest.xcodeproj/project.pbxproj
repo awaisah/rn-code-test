@@ -18,6 +18,10 @@
 		2DCD954D1E0B4F2C00145EB5 /* RNCodeTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* RNCodeTestTests.m */; };
 		4597EE07FF8990E8E9500D61 /* libPods-RNCodeTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E48A78266DE3F306F93D31BB /* libPods-RNCodeTest.a */; };
 		989E007BA7C667349CC005DC /* libPods-RNCodeTest-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E7569BCDD14923CE94C303 /* libPods-RNCodeTest-tvOS.a */; };
+		C83AC4E5277134C300E07DA9 /* ServiceCodeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83AC4E4277134C300E07DA9 /* ServiceCodeManager.swift */; };
+		C83AC4E6277134C400E07DA9 /* ServiceCodeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83AC4E4277134C300E07DA9 /* ServiceCodeManager.swift */; };
+		C83AC4E9277136C800E07DA9 /* ServiceCodeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C83AC4E8277136C800E07DA9 /* ServiceCodeManager.m */; };
+		C83AC4EA277136C800E07DA9 /* ServiceCodeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C83AC4E8277136C800E07DA9 /* ServiceCodeManager.m */; };
 		EB0D393B6EB8FB3290C53A3B /* libPods-RNCodeTestTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E6366A958B9AABD93234AB /* libPods-RNCodeTestTests.a */; };
 		EC9768DF5E211F6D260D2D56 /* libPods-RNCodeTest-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B2C87D6E38FE9167FCDA024 /* libPods-RNCodeTest-tvOSTests.a */; };
 /* End PBXBuildFile section */
@@ -61,6 +65,10 @@
 		812F75EF7F2D93D2E8C3C6DA /* Pods-RNCodeTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNCodeTestTests.debug.xcconfig"; path = "Target Support Files/Pods-RNCodeTestTests/Pods-RNCodeTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		90F557CA38089C0175DB9742 /* Pods-RNCodeTest-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNCodeTest-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-RNCodeTest-tvOSTests/Pods-RNCodeTest-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AB125A10FD73304EA015A261 /* Pods-RNCodeTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNCodeTestTests.release.xcconfig"; path = "Target Support Files/Pods-RNCodeTestTests/Pods-RNCodeTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		C83AC4E2277134C300E07DA9 /* RNCodeTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RNCodeTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		C83AC4E3277134C300E07DA9 /* RNCodeTest-tvOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RNCodeTest-tvOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		C83AC4E4277134C300E07DA9 /* ServiceCodeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCodeManager.swift; sourceTree = "<group>"; };
+		C83AC4E8277136C800E07DA9 /* ServiceCodeManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServiceCodeManager.m; sourceTree = "<group>"; };
 		D0E7569BCDD14923CE94C303 /* libPods-RNCodeTest-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNCodeTest-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D41215FDD1CA7AFB33D1D40C /* Pods-RNCodeTest-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNCodeTest-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-RNCodeTest-tvOS/Pods-RNCodeTest-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		E48A78266DE3F306F93D31BB /* libPods-RNCodeTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNCodeTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,6 +140,10 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				C83AC4E4277134C300E07DA9 /* ServiceCodeManager.swift */,
+				C83AC4E2277134C300E07DA9 /* RNCodeTest-Bridging-Header.h */,
+				C83AC4E3277134C300E07DA9 /* RNCodeTest-tvOS-Bridging-Header.h */,
+				C83AC4E8277136C800E07DA9 /* ServiceCodeManager.m */,
 			);
 			name = RNCodeTest;
 			sourceTree = "<group>";
@@ -295,9 +307,11 @@
 					};
 					13B07F861A680F5B00A75B9A = {
 						DevelopmentTeam = C5LQ392RC5;
+						LastSwiftMigration = 1320;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 1320;
 						ProvisioningStyle = Automatic;
 					};
 					2D02E48F1E0B4A5D006451C7 = {
@@ -581,7 +595,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C83AC4E9277136C800E07DA9 /* ServiceCodeManager.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				C83AC4E5277134C300E07DA9 /* ServiceCodeManager.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -590,7 +606,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C83AC4EA277136C800E07DA9 /* ServiceCodeManager.m in Sources */,
 				2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */,
+				C83AC4E6277134C400E07DA9 /* ServiceCodeManager.swift in Sources */,
 				2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -635,6 +653,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 812F75EF7F2D93D2E8C3C6DA /* Pods-RNCodeTestTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = C5LQ392RC5;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -659,6 +678,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AB125A10FD73304EA015A261 /* Pods-RNCodeTestTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				DEVELOPMENT_TEAM = C5LQ392RC5;
@@ -681,6 +701,7 @@
 			baseConfigurationReference = 1D4A6749819E1CF0494DFC92 /* Pods-RNCodeTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = C5LQ392RC5;
@@ -694,6 +715,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = RNCodeTest;
 				SERVICE_KEY = MmHsCMUt57;
+				SWIFT_OBJC_BRIDGING_HEADER = "RNCodeTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -703,6 +727,7 @@
 			baseConfigurationReference = 437EBC9ACEEF76E610049346 /* Pods-RNCodeTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = C5LQ392RC5;
 				INFOPLIST_FILE = RNCodeTest/Info.plist;
@@ -715,6 +740,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = RNCodeTest;
 				SERVICE_KEY = MmHsCMUt57;
+				SWIFT_OBJC_BRIDGING_HEADER = "RNCodeTest-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
@@ -726,6 +753,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -742,6 +770,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.RNCodeTest-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
+				SWIFT_OBJC_BRIDGING_HEADER = "RNCodeTest-tvOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.2;
 			};
@@ -754,6 +785,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -770,6 +802,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.RNCodeTest-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
+				SWIFT_OBJC_BRIDGING_HEADER = "RNCodeTest-tvOS-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.2;
 			};
@@ -779,6 +813,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 90F557CA38089C0175DB9742 /* Pods-RNCodeTest-tvOSTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -806,6 +841,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6EB797BC7C5A30E93AF072E1 /* Pods-RNCodeTest-tvOSTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
