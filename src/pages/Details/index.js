@@ -23,7 +23,7 @@ const DetailsScreen = ({route}) => {
                 />
                 <View style={styles.innerContainer}>
                     <Text style={styles.nameLabel}>{product.name}</Text>
-                    <DisplayPrices product={product} />
+                    <DisplayPrices product={product} theme="dark" />
                     <Text style={styles.descriptionTitle}>Description:</Text>
                     <Text style={styles.descriptionLabel}>{product.description}</Text>
                 </View>
@@ -34,25 +34,22 @@ const DetailsScreen = ({route}) => {
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: '#666'
+        backgroundColor: 'white'
     },
     innerContainer: {
         padding: 10,
     },
     nameLabel: {
-        color: 'white',
         fontWeight: 'bold',
         fontSize: 20,
         marginBottom: 5,
     },
     descriptionTitle: {
-        color: 'white',
         fontSize: 18,
         fontWeight: 'bold',
         marginTop: 15
     },
     descriptionLabel: {
-        color: 'white',
         fontSize: 14
     },
     imageView: {
