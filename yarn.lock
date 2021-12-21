@@ -1006,11 +1006,6 @@
   "resolved" "https://registry.npmjs.org/@react-native-community/masked-view/-/masked-view-0.1.7.tgz"
   "version" "0.1.7"
 
-"@react-native-masked-view/masked-view@^0.2.6":
-  "integrity" "sha512-303CxmetUmgiX9NSUxatZkNh9qTYYdiM8xkGf9I3Uj20U3eGY3M78ljeNQ4UVCJA+FNGS5nC1dtS9GjIqvB4dg=="
-  "resolved" "https://registry.npmjs.org/@react-native-masked-view/masked-view/-/masked-view-0.2.6.tgz"
-  "version" "0.2.6"
-
 "@react-navigation/bottom-tabs@^5.1.1":
   "integrity" "sha512-3eKoLgBsRKXFQoWv9co6bXr2DjlRDtgaS1XZ/2LpOs27lDthShGdVkWzTVaFZ6aGf6pOhUaeKtd8wX+jkUXk0A=="
   "resolved" "https://registry.npmjs.org/@react-navigation/bottom-tabs/-/bottom-tabs-5.1.1.tgz"
@@ -5551,7 +5546,7 @@
     "react-is" "^16.9.0"
     "scheduler" "^0.15.0"
 
-"react@*", "react@^16.0", "react@^16.0.0", "react@16 || 17", "react@16.9.0":
+"react@*", "react@^16.0", "react@^16.0.0", "react@16.9.0":
   "integrity" "sha512-+7LQnFBwkiw+BobzOF6N//BdoNw0ouwmSJTEm9cglOOmsg/TMiFHZLe2sEoN5M7LgJTj9oHH0gxklfnQe66S1w=="
   "resolved" "https://registry.npmjs.org/react/-/react-16.9.0.tgz"
   "version" "16.9.0"

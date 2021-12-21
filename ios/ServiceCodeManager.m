@@ -1,5 +1,5 @@
 //
-//  NativeModuleManager.m
+//  ServiceCodeManager.m
 //  RNCodeTest
 //
 //  Created by Awais Hussain on 20/12/2021.
