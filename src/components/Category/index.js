@@ -15,7 +15,7 @@ const Category = ({category}) => {
                 horizontal
                 data={category.products}
                 renderItem={renderItem}
-                keyExtractor={(item) => item.title}
+                keyExtractor={(item) => item.name}
             />
         </View>
     )

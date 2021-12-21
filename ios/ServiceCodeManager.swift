@@ -16,6 +16,11 @@ class ServiceCodeManager : NSObject {
     let serviceCode: String = Bundle.main.object(forInfoDictionaryKey: "SERVICE_KEY") as! String
     callback([serviceCode])
   }
+  
+  @objc
+  static func requiresMainQueueSetup() -> Bool {
+      return true
+  }
 
 }
 
